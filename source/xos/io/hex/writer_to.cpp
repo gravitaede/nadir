@@ -13,30 +13,27 @@
 /// or otherwise) arising in any way out of the use of this software, 
 /// even if advised of the possibility of such damage.
 ///
-///   File: io.cpp
+///   File: writer_to.cpp
 ///
 /// Author: $author$
-///   Date: 8/5/2022
+///   Date: 8/14/2022
 ///////////////////////////////////////////////////////////////////////
-#include "xos/console/io.hpp"
-#include "xos/console/sequence.cpp"
-#include "xos/console/input.cpp"
-#include "xos/console/output.cpp"
-#include "xos/console/error.cpp"
-#include "xos/console/out.cpp"
+#include "xos/io/hex/writer_to.hpp"
 
-#if !defined(XOS_CONSOLE_IO_INSTANCE)
-///#define XOS_CONSOLE_IO_INSTANCE
-#endif /// !defined(XOS_CONSOLE_IO_INSTANCE)
+#if !defined(XOS_IO_HEX_WRITER_TO_INSTANCE)
+///#define XOS_IO_HEX_WRITER_TO_INSTANCE
+#endif /// !defined(XOS_IO_HEX_WRITER_TO_INSTANCE)
 
 namespace xos {
-namespace console {
+namespace io {
+namespace hex {
 
-///  Class: iot
-#if defined(XOS_CONSOLE_IO_INSTANCE)
-static io the_io;
-#endif /// defined(XOS_CONSOLE_IO_INSTANCE)
+///  Class: writer_tot
+#if defined(XOS_IO_HEX_WRITER_TO_INSTANCE)
+static writer_to the_writer_to;
+#endif /// defined(XOS_IO_HEX_WRITER_TO_INSTANCE)
 
 
-} /// namespace console
+} /// namespace hex
+} /// namespace io
 } /// namespace xos

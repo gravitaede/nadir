@@ -13,30 +13,27 @@
 /// or otherwise) arising in any way out of the use of this software, 
 /// even if advised of the possibility of such damage.
 ///
-///   File: io.cpp
+///   File: write_to_output.cpp
 ///
 /// Author: $author$
-///   Date: 8/5/2022
+///   Date: 8/14/2022
 ///////////////////////////////////////////////////////////////////////
-#include "xos/console/io.hpp"
-#include "xos/console/sequence.cpp"
-#include "xos/console/input.cpp"
-#include "xos/console/output.cpp"
-#include "xos/console/error.cpp"
-#include "xos/console/out.cpp"
+#include "xos/io/hex/write_to_output.hpp"
 
-#if !defined(XOS_CONSOLE_IO_INSTANCE)
-///#define XOS_CONSOLE_IO_INSTANCE
-#endif /// !defined(XOS_CONSOLE_IO_INSTANCE)
+#if !defined(XOS_IO_HEX_WRITE_TO_OUTPUT_INSTANCE)
+///#define XOS_IO_HEX_WRITE_TO_OUTPUT_INSTANCE
+#endif /// !defined(XOS_IO_HEX_WRITE_TO_OUTPUT_INSTANCE)
 
 namespace xos {
-namespace console {
+namespace io {
+namespace hex {
 
-///  Class: iot
-#if defined(XOS_CONSOLE_IO_INSTANCE)
-static io the_io;
-#endif /// defined(XOS_CONSOLE_IO_INSTANCE)
+///  Class: write_to_outputt
+#if defined(XOS_IO_HEX_WRITE_TO_OUTPUT_INSTANCE)
+static write_to_output the_write_to_output;
+#endif /// defined(XOS_IO_HEX_WRITE_TO_OUTPUT_INSTANCE)
 
 
-} /// namespace console
+} /// namespace hex
+} /// namespace io
 } /// namespace xos

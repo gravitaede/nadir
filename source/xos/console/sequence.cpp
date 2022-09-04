@@ -13,29 +13,24 @@
 /// or otherwise) arising in any way out of the use of this software, 
 /// even if advised of the possibility of such damage.
 ///
-///   File: io.cpp
+///   File: sequence.cpp
 ///
 /// Author: $author$
 ///   Date: 8/5/2022
 ///////////////////////////////////////////////////////////////////////
-#include "xos/console/io.hpp"
-#include "xos/console/sequence.cpp"
-#include "xos/console/input.cpp"
-#include "xos/console/output.cpp"
-#include "xos/console/error.cpp"
-#include "xos/console/out.cpp"
+#include "xos/console/sequence.hpp"
 
-#if !defined(XOS_CONSOLE_IO_INSTANCE)
-///#define XOS_CONSOLE_IO_INSTANCE
-#endif /// !defined(XOS_CONSOLE_IO_INSTANCE)
+#if !defined(XOS_CONSOLE_SEQUENCE_INSTANCE)
+///#define XOS_CONSOLE_SEQUENCE_INSTANCE
+#endif /// !defined(XOS_CONSOLE_SEQUENCE_INSTANCE)
 
 namespace xos {
 namespace console {
 
-///  Class: iot
-#if defined(XOS_CONSOLE_IO_INSTANCE)
-static io the_io;
-#endif /// defined(XOS_CONSOLE_IO_INSTANCE)
+///  Class: sequencet
+#if defined(XOS_CONSOLE_SEQUENCE_INSTANCE)
+static sequence the_sequence;
+#endif /// defined(XOS_CONSOLE_SEQUENCE_INSTANCE)
 
 
 } /// namespace console
