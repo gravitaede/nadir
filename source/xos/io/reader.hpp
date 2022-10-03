@@ -47,6 +47,10 @@ public:
         ssize_t count = 0;
         return count;
     }    
+    virtual ssize_t sized_read(sized_t& sized) {
+        ssize_t count = 0;
+        return count;
+    }    
 }; /// class exported readert
 typedef readert<seeker> reader;
 
